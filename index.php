@@ -1,11 +1,24 @@
+<?php
+	require_once(__DIR__ . "/model/config.php");
+?>
 <!DOCTYPE>
 <html>
 <head>
 <title>Second To-Do List</title>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
+<header>
+	<button type="button">
+		<a href="<?php echo $path . "register.php"?>">register</a>
+	</button>
+	<button type="button">
+		<a href="<?php echo $path . "login.php"?>">login</a>
+	</button>
+	<button type="button">
+		<a href="<?php echo $path . "controller/logout-user.php"?>">logout</a>
+	</button>
+</header>
 <body>
-
 <a class="btn btn-primary" href="login.php">Login</a>
 <div class="text-right small-4 medium-2 columns">
 <a class="btn btn-primary" href="logout-user.php">Logout</a>
